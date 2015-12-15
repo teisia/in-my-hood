@@ -1,4 +1,52 @@
+body {
+  margin: 0 auto;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.name {
+  text-align: center;
+  height: 100vh;
+}
+
+h1 {
+  font-size: 4em;
+  margin-bottom: -10px;
+}
+
+button {
+  border: none;
+  background-color: white;
+}
+
+button:active {
+  border: none;
+  background-color: white;
+  color: blue;
+}
+
+.search {
+  margin: 0 auto;
+  text-align: center;
+  height: 100vh;
+}
+
+input {
+  font-size: 20px;
+}
+
+.results {
+  height: 100vh;
+}
+
+#no {
+  text-align: center;
+  height: 20vh;
+  width: 100vw;
+  font-size: 20px;
+}
+
 #date {
+  float: left;
 
 }
 
@@ -13,4 +61,10 @@ float: left;
 
 #concert {
 float: left;
+}
+
+footer {
+  clear: both;
+  position: sticky;
+  text-align: center;
 }
