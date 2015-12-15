@@ -8,7 +8,6 @@ var lat = response["location"]["lat"] + ",";
 var lng = response["location"]["lng"];
 var latlng = lat.concat(lng);
 var artist = document.getElementById('artistField');
-console.log(latlng);
 
 $("#buttoni").click(function() {
 var ll = $.ajax ({
@@ -19,8 +18,11 @@ var ll = $.ajax ({
 
 ll.done(function (response) {
 for (var i = 0; i < response.length; i++) {
-//console.log(artist.value);
-$("#stuff").append("<div>"+response[i]['title']+"</div>");
+  var artistNumber = response[i]["artists"].length;
+ for (var j = 0; j < artistNumber; j++) {
+$("#thumb").append("<div><img src='"+response[i]['artists'][j]['thumb_url']+"'/></div>");
+$("#concert").append("<div>"+response[i]['artists'][j]['name']+"<br>"+response[i]['venue']['name']+" - "+response[i]['venue']['city']+", "+response[i]['venue']['region']+"</div>"+"<br><br>")
+ }
  }
 })
 })
