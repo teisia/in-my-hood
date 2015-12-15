@@ -16,15 +16,22 @@ var ll = $.ajax ({
   dataType: "jsonp"
 })
 
+//var datesArray = [];
+
 ll.done(function (response) {
 for (var i = 0; i < response.length; i++) {
   var artistNumber = response[i]["artists"].length;
+  var dateCat = (response[i]["datetime"]).substring(0,10);
+  //datesArray.push(dateCat);
+  var dateNice = response[i]["formatted_datetime"];
+  var dateNicer = dateNice.substring(0, dateNice.length - 16);
+  //if(datesArray[i] === datesArray[i + 1])
  for (var j = 0; j < artistNumber; j++) {
+$("#date").html(dateNicer);
 $("#thumb").append("<div><img src='"+response[i]['artists'][j]['thumb_url']+"'/></div>");
-$("#concert").append("<div>"+response[i]['artists'][j]['name']+"<br>"+response[i]['venue']['name']+" - "+response[i]['venue']['city']+", "+response[i]['venue']['region']+"</div>"+"<br><br>")
+$("#concert").append("<div>"+response[i]['artists'][j]['name']+"<br>"+response[i]['venue']['name']+" - "+response[i]['venue']['city']+", "+response[i]['venue']['region']+"</div>");
  }
  }
 })
 })
 })
-//this works
