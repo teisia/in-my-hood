@@ -20,7 +20,7 @@ var ll = $.ajax ({
 ll.done(function (response) {
 for (var i = 0; i < response.length; i++) {
 //console.log(artist.value);
-$("#stuff").append("<tr<td>""+response[i]['title']+"</td>""</tr>"</table>");
+$("#stuff").append("<div>"+response[i]['title']+"</div>");
  }
 })
 })
