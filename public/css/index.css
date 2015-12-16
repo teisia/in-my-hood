@@ -1,6 +1,28 @@
-body {
-  margin: 0 auto;
+input:focus, textarea:focus, button:focus {
+  outline: none;
+}
+
+html, body {
+  height: 100%;
   font-family: 'Source Sans Pro', sans-serif;
+}
+
+.wrapper {
+  min-height: 100%;
+}
+
+main {
+  overflow: auto;
+  padding-bottom: 5vh;
+  clear: both;
+}
+
+body: before {
+  content: "";
+  height: 100%;
+  float: left;
+  width: 0;
+  margin-top: -32767px;
 }
 
 .name {
@@ -16,7 +38,7 @@ h1 {
 
 #buttoni {
   border: none;
-  background-color: #F0F0F0;
+  background-color: white;
 }
 
 #firstDown {
@@ -27,19 +49,26 @@ h1 {
 #up {
   border: none;
   background-color: white;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left: 47.5%;
+  padding-right: 47.5%;
 }
 
 #more {
-  border-radius: 5px;
-  background-color: #E0FFFF;
-  border-color: #E0FFFF;
+  margin-top: 7px;
+  margin-left: -5px;
+  color: #1E90FF;
+  font-size: 14px;
+  background-color: white;
+  border: none;
+  font-weight: bold;
 }
 
 .search {
   padding-top: 40vh;
   text-align: center;
   height: 60vh;
-  background-color: #F0F0F0;
 }
 
 input {
@@ -72,7 +101,5 @@ table img {
 
 footer {
   height: 5vh;
-  position: sticky;
-  bottom: 0;
   text-align: center;
 }

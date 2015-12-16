@@ -32,7 +32,7 @@ for (var i = 0; i < response.length; i++) {
   console.log(tickets);
   //if(datesArray[i] === datesArray[i + 1])
  for (var j = 0; j < artistNumber; j++) {
-$("#concertList").append("<tr><td id='date'>"+dateNicer+"</td></tr><tr><td><img src='"+response[i]['artists'][j]['thumb_url']+"'/></td><td id='name'>"+response[i]['artists'][j]['name']+"<br>"+response[i]['venue']['name']+" - "+response[i]['venue']['city']+", "+response[i]['venue']['region']+"</td><br><td><button id='more'>get tickets</button></td></tr>");
+$("#concertList").append("<tr><td id='date'>"+dateNicer+"</td></tr><tr><td><img src='"+response[i]['artists'][j]['thumb_url']+"'/></td><td id='name'>"+response[i]['artists'][j]['name']+"<br>"+response[i]['venue']['name']+" - "+response[i]['venue']['city']+", "+response[i]['venue']['region']+"<br><a href='"+tickets+"'><button id='more'>get tickets</button></a></td></tr>");
  }
  }
  }
