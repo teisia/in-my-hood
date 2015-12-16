@@ -44,6 +44,7 @@ h1 {
 #firstDown {
   border: none;
   background-color: white;
+  padding-top: 200px;
 }
 
 #up {
@@ -72,11 +73,12 @@ h1 {
 }
 
 input {
-  font-size: 50px;
+  font-size: 3em;
+  width: 40vw;
 }
 
 .results {
-  height: 95vh;
+  height: 90vh;
 }
 
 #concertList {
