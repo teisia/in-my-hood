@@ -6,27 +6,32 @@
   <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
   <link href="css/index.css" rel="stylesheet">
 </head>
-<body>
-  <main>
+<body class="site">
+  <div class="wrapper">
+  <main class="site-content">
   <section class="name">
   <h1>in my hood</h1>
   <p>search for your favorite artist and see if they or a related artist is playing in your area.</p>
+  <button id="firstDown"><img src="https://cdn0.iconfinder.com/data/icons/feather/96/591279-arrow-down-48.png"></button>
   </section>
   <section class ="search">
   <input type"text" name="field" id="artistField"/>
-  <button id="buttoni"><img src="https://cdn0.iconfinder.com/data/icons/glyphpack/26/double-arrow-right-20.png"></button>
+  <button id="buttoni"><img src="https://cdn0.iconfinder.com/data/icons/feather/96/591276-arrow-right-48.png"></button>
   </section>
   <section class="results">
   <div id="no">
   </div>
-  <div id="date">
-  </div>
-  <div id="thumb">
-  </div>
-  <div id="concert">
-  </div>
+  <table id="concertList">
+  </table>
+  <button id="up"><img src="https://cdn0.iconfinder.com/data/icons/feather/96/591275-arrow-up-48.png"></button>
+  </section>
+  <section class="indv">
+  <table id="indvConcert">
+  </table>
   </section>
   </main>
+  <div class="push"></div>
+  </div>
   <footer>&copy; 2015 Teisia Park</footer>
 </body>
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>

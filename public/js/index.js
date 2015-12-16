@@ -28,14 +28,32 @@ for (var i = 0; i < response.length; i++) {
   //datesArray.push(dateCat);
   var dateNice = response[i]["formatted_datetime"];
   var dateNicer = dateNice.substring(0, dateNice.length - 16);
+  var tickets = response[i]["ticket_url"];
+  console.log(tickets);
   //if(datesArray[i] === datesArray[i + 1])
  for (var j = 0; j < artistNumber; j++) {
-$("#date").append("<div>"+dateNicer+"</div>");
-$("#thumb").append("<div><img src='"+response[i]['artists'][j]['thumb_url']+"'/></div>");
-$("#concert").append("<div>"+response[i]['artists'][j]['name']+"<br>"+response[i]['venue']['name']+" - "+response[i]['venue']['city']+", "+response[i]['venue']['region']+"</div>");
+$("#concertList").append("<tr><td id='date'>"+dateNicer+"</td></tr><tr><td><img src='"+response[i]['artists'][j]['thumb_url']+"'/></td><td id='name'>"+response[i]['artists'][j]['name']+"<br>"+response[i]['venue']['name']+" - "+response[i]['venue']['city']+", "+response[i]['venue']['region']+"</td><br><td><button id='more'>get tickets</button></td></tr>");
  }
  }
  }
 })
 })
 })
+
+$("#firstDown").click(function() {
+   $('html, body').animate({
+       scrollTop: $(".search").offset().top
+   }, 500);
+});
+
+$("#buttoni").click(function() {
+   $('html, body').animate({
+       scrollTop: $(".results").offset().top
+   }, 500);
+});
+
+$("#up").click(function() {
+   $('html, body').animate({
+       scrollTop: $(".search").offset().top
+   }, 500);
+});

@@ -4,67 +4,75 @@ body {
 }
 
 .name {
+  padding-top: 25vh;
   text-align: center;
-  height: 100vh;
+  height: 75vh;
 }
 
 h1 {
-  font-size: 4em;
+  font-size: 5em;
   margin-bottom: -10px;
 }
 
-button {
+#buttoni {
+  border: none;
+  background-color: #F0F0F0;
+}
+
+#firstDown {
   border: none;
   background-color: white;
 }
 
-button:active {
+#up {
   border: none;
   background-color: white;
-  color: blue;
+}
+
+#more {
+  border-radius: 5px;
+  background-color: #E0FFFF;
+  border-color: #E0FFFF;
 }
 
 .search {
-  margin: 0 auto;
+  padding-top: 40vh;
   text-align: center;
-  height: 100vh;
+  height: 60vh;
+  background-color: #F0F0F0;
 }
 
 input {
-  font-size: 20px;
+  font-size: 50px;
 }
 
 .results {
-  height: 100vh;
+  height: 95vh;
+}
+
+#concertList {
+  margin: 0 auto;
+}
+
+#date {
+  padding-bottom: 5px;
+  font-weight: bold;
 }
 
 #no {
   text-align: center;
-  height: 20vh;
-  width: 100vw;
   font-size: 20px;
+  padding-top: 100px;
 }
 
-#date {
-  float: left;
-
-}
-
-div img {
+table img {
   height: 75px;
   width: 75px;
 }
 
-#thumb {
-float: left;
-}
-
-#concert {
-float: left;
-}
-
 footer {
-  clear: both;
+  height: 5vh;
   position: sticky;
+  bottom: 0;
   text-align: center;
 }
