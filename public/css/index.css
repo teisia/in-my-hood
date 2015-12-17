@@ -1,9 +1,3 @@
-@media {
-  #no iframe {
-    text-align: center;
-  }
-}
-
 input:focus, textarea:focus, button:focus {
   outline: none;
 }

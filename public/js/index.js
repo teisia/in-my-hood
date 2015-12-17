@@ -20,7 +20,7 @@ var ll = $.ajax ({
 
 ll.done(function (response) {
   if (response.length === 0) {
-    $("#no").append("<div>"+"sorry, there are no concerts related to this artist in your hood."+"<br><br><iframe src='https://giphy.com/gifs/6gLyE15StAs3C/html5' frameBorder='0'></iframe></div>");
+    $("#no").append("<div>"+"sorry, there are no concerts related to this artist in your hood."+"<br><br><iframe src='giphy.gif' frameBorder='0'></iframe></div>");
   } else {
 for (var i = 0; i < response.length; i++) {
   var artistNumber = response[i]["artists"].length;
