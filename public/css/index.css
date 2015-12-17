@@ -77,7 +77,7 @@ p {
 
 #no iframe {
   text-align: center;
-  margin: 0 auto;
+  height: 50vh;
 }
 
 .search {
