@@ -43,16 +43,12 @@ p {
 #buttoni {
   border: none;
   background-color: white;
-  height: 5%;
-  width: 5%;
 }
 
 #firstDown {
   border: none;
   background-color: white;
   padding-top: 200px;
-  height: 5%;
-  width: 5%;
 }
 
 #up {
@@ -62,8 +58,6 @@ p {
   padding-bottom: 2%;
   padding-left: 47.5%;
   padding-right: 47.5%;
-  height: 5%;
-  width: 5%;
 }
 
 #more {
@@ -74,6 +68,11 @@ p {
   background-color: white;
   border: none;
   font-weight: bold;
+}
+
+#no a {
+  text-decoration: none;
+  color: #1E90FF;
 }
 
 .search {
