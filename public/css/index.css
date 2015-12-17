@@ -75,6 +75,11 @@ p {
   color: #1E90FF;
 }
 
+#no iframe {
+  text-align: center;
+  margin: 0 auto;
+}
+
 .search {
   padding-top: 40vh;
   text-align: center;
