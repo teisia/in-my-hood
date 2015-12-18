@@ -38,16 +38,17 @@ for (var i = 0; i < response.length; i++) {
        method: "GET",
        dataType: "jsonp"
        })
-     console.log("response["+i+"]['artists']["+j+"]['name'] = "+response[i]['artists'][j]['name']);
-       console.log("artistname = "+artistname);
+
 $("#concertList").append("<tr><td id='date'>"+dateNicer+"</td></tr><tr><td><img src='"+response[i]['artists'][j]['thumb_url']+"'/></td><td id='name'>"+response[i]['artists'][j]['name']+"<br>"+response[i]['venue']['name']+" - "+response[i]['venue']['city']+", "+response[i]['venue']['region']+"<br><div class='prevTrack'><img id='"+artistname+"'class ='speaker' src='"+previewIcon+"'/></div><a href='"+tickets+"' onclick='window.open(this.href); return false;'><div id='more'><img id= 'ticket' src='"+ticketIcon+"'></div></a></td></tr>");
 
 preview.done(function(payload) {
   $(".speaker").click(function() {
     $("#concertList").remove("tr");
-    if(this.id === payload["results"][0]["artistName"]) {
+    if((this.id).toLowerCase() === (payload["results"][0]["artistName"]).toLowerCase()) {
+      $(".tune").hide();
        var previewOne = payload["results"][0];
-         $(this).parents("td").append("<tr><td><audio src='"+previewOne['previewUrl']+"' controls></audio></td></tr>");
+       var songLink = previewOne['previewUrl'];
+         $(this).parents("td").append("<div class='tune'><audio src='"+songLink+"' controls></audio></div>");
     }
  })
 })
