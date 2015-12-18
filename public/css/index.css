@@ -64,13 +64,14 @@ p {
 }
 
 #more {
-  margin-top: 7px;
-  margin-left: -5px;
+/*   margin-top: 7px;
+margin-left: -5px; */
   color: #1E90FF;
   font-size: 1em;
   background-color: white;
   border: none;
   font-weight: bold;
+  width: 40px;
 }
 
 #no a {
@@ -104,8 +105,12 @@ input {
   margin: 0 auto;
 }
 
+tr {
+  padding: 5px;
+}
+
 #date {
-  padding-bottom: 5px;
+  padding-bottom: 1px;
   font-weight: bold;
   font-size: 1em;
 }
@@ -121,8 +126,19 @@ input {
 }
 
 table img {
-  height: 75px;
-  width: 75px;
+  height: 110px;
+  width: 110px;
+}
+
+.speaker {
+  height: 35px;
+  width: 35px;
+  cursor: pointer;
+}
+
+#ticket {
+  height: 35px;
+  width: 35px;
 }
 
 footer {
